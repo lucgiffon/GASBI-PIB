@@ -1,0 +1,10 @@
+2015-04-19 09:41:11,171 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-19 09:41:11,172 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-19 09:41:11,175 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:41:11,176 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 11:52:49,511 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-19 11:52:49,512 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-19 11:52:49,514 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 11:52:49,515 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+

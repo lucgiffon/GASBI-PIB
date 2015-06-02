@@ -1,0 +1,424 @@
+# ######################################################## # 
+# Genome Annotating Software for BioInformaticians - GASBI # 
+# ######################################################## #
+
+Group: Global: 
+# ###########
+# Path to the output folder where output files will be stored.
+# type str (absolute PATH is highly recommended)
+OUT_PATH: /home/luc/Documents/PIB/GASBI_TEST
+
+# Path to the sequence of interest.
+# type str (absolute PATH is highly recommended)
+SEQUENCE_PATH: /home/luc/Documents/PIB/GASBI_TEST/Pseudomonas_aeruginosa_PAO1_VE2_uid225026_NC_022591.fna
+
+# Name of your project. Output files will take this name as prefix.
+# type str (quotes are not necessary)
+TAG: test
+
+Group: CDS Finding Tool: 
+# ######################
+
+Tool: Glimmer: 
+# """"""""""""
+# You can refer to the official documentation for more information about settings: 
+# https: //ccb.jhu.edu/software/glimmer/glim302notes.pdf
+
+Subgroup: Basic: 
+# --------------
+# Path to the icm model you want to use to run Glimmer.
+# If ICM_MODEL_PATH is set to default, GASBI will run icm-build program
+# to generate the icm model then use it.
+# Anyway, the ICM_MODEL_PATH is calculated, so, setting it with particular
+# icm model do not improve performance of the software.
+# type str (absolute PATH is highly recommended)
+ICM_MODEL_PATH: default
+
+# -A option
+# If START_CODONS is set to default, start codons are atg, gtg and ttg.
+# type list (example: atg,gtg,ttg)
+START_CODONS: default
+
+# -P option
+# If START_PROBS is set to default, each start codon is equally likely
+# (which is very unusual)
+# type list (example: 0.6,0.35,0.05)
+START_PROBS: default
+
+# -g option
+# If GENE_LEN is set to default, there is no minimum length for gene 
+# prediction.
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+GENE_LEN: default
+
+# -l option
+# If LINEAR is set to default, assume a circular genome.
+# type bool (True or False. default is False)
+LINEAR: True
+
+# -C option
+# If GC_PERCENT is set to default, the gc percentage will be counted
+# from the input file.
+# type float (use a dot to spare entire part to decimal part)
+GC_PERCENT: default
+
+# -Z option
+# If STOP_CODONS is set to default, stop codons are tag, tga and taa.
+# type list (example: tag,tga,taa)
+STOP_CODON:default
+
+Subgroup: Expert: 
+# ---------------
+# -b option
+# type str (quotes are not necessary)
+RBS_PWN_PATH: default
+
+# -o option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+MAX_OLAP: 50
+
+# -E option
+# type str (absolute PATH is highly recommended)
+ENTROPY_PATH: default
+
+# -f option
+# type bool (True or False. default is False)
+FIRST_CODON: default 
+
+# -i option
+# type str (absolute PATH is highly recommended)
+IGNORE_PATH: default 
+
+# -L option
+# type str (absolute PATH is highly recommended)
+ORF_COORDS_PATH: default 
+
+# -M option has been removed from GASBI.
+
+# -q option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+IGNORE_SCORE_LEN: default
+
+# -r option
+# type bool (True or False. default is False)
+NO_INDEP: default 
+
+# -t option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+TRESHOLD: 30 
+
+# -X option
+# type bool (True or False. default is False)
+EXTEND: default
+
+# -z option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+TRANS_TABLE: default 
+
+Tool: GeneMark: 
+# """""""""""""
+# You can refer to the official documentation for more information about settings: 
+# http: //www.genepro.com/Manuals/GM/GM_Options.aspx
+
+Subgroup: Basic: 
+# --------------
+# -m option
+# Path to the table of oligonucleotide usage statistics you want to use 
+# to run GeneMark.
+# type str (absolute PATH is highly recommended) 
+MATRIX_PATH: /home/luc/bin/genemark_suite_linux_64/gmsuite/heuristic_mat/heu_11_50.mat
+
+Subgroup: Expert: 
+# ---------------
+# -a option
+# type float (use a dot to spare entire part to decimal part)
+A_PIORI_PROBABILITY: default 
+
+# -c option
+# type str (absolute PATH is highly recommended)
+CODON_TRANSLATION_PATH: default
+
+# -s option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+STEP_SIZE: default 
+
+# -t option
+# type float (use a dot to spare entire part to decimal part)
+TRESHOLD: default
+
+# -w option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+WINDOW_SIZE: default
+
+# -v option has been disable for GASBI and is used.
+
+# -D option is used by GASBI, user can't modify.
+
+# -R option
+# type str (absolute PATH is highly recommended)
+RBS_PATH: default 
+
+# GRAPHIC options have been disable for GASBI and they are not used.
+
+# LISTING options have been disable for GASBI but they are all used.
+
+# ORF-related options have been disable for GASBI and they are not used.
+
+# ROI-related options have been disable for GASBI and they are not used.
+
+Group: Preliminary: 
+# #################
+
+Tool: Build ICM: 
+# """""""""""""
+
+Subgroup: Basic: 
+# --------------
+# If INPUT_FILE_PATH is set to default, the .train file from extract 
+# software will be used.
+# Anyway, the INPUT_FILE_PATH is calculated, so, setting it with particular
+# input do not improve performance of the software.
+# type str (absolute PATH is highly recommended)
+INPUT_FILE_PATH: default
+
+# -Z option
+# If STOP_CODONS is set to default, the stop codons are tag, tga and taa.
+# type list
+STOP_CODONS: default      
+
+Subgroup: Expert: 
+# ---------------
+# -d option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+DEPTH: default
+
+# -F option
+# type bool (True or False. default is False) 
+NO_STOPS: default
+
+# -p option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+PERIOD: default
+
+# -r option
+# type bool (True or False. default is False) 
+REVERSE: True
+
+# --text option has been removed from GASBI.
+
+# -v option has been disable for Gasbi and is used
+
+# -w option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+WIDTH: default
+
+# -z option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+TRANS_TABLE: default
+
+Tool: Extract: 
+# """"""""""""
+
+Subgroup: Basic: 
+# --------------
+# If INPUT_FILE_PATH is set to default, the .longorfs file from longorfs 
+# software will be used.
+# Anyway, the INPUT_FILE_PATH is calculated, so, setting it with particular
+# input do not improve performance of the software.
+# type str (absolute PATH is highly recommended)
+INPUT_FILE_PATH: default
+
+# -l option
+# If MINLEN is set to default, no minimum length is set.
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+MINLEN: default
+
+# -d option
+# If DIR is set to default, the direction of the sequence is not taken 
+# into account.
+# type bool (True or False. default is False) 
+DIR: default
+
+
+Subgroup: Expert: 
+# ---------------
+# -s option
+# type bool (True or False. default is False)
+NO_START: default
+
+# -t option
+# type bool (True or False. default is False) 
+NO_STOP: True
+
+# -w option
+# type bool (True or False. default is False)
+NO_WRAP: default
+               
+Tool: Long ORFs: 
+# """""""""""""
+
+Subgroup: Basic:
+# --------------
+# -A option
+# If START_CODONS is set to default, start codons are atg, gtg and ttg.
+# type list (example: atg,gtg,ttg)
+START_CODONS: default
+
+# -g option
+# If MIN_LEN is set to default, there is no minimum gene length.
+# type int (no dot allowed: 1 is right; 1.0 isn't) (no dot allowed: 1 
+# is right; 1.0 isn't)
+MIN_LEN: default
+
+# -l option
+# If LINEAR is set to default, assume a circular genome.
+# type bool (True or False. default is False)
+LINEAR: True
+
+# -Z option
+# If STOP_CODONS is set to default, stop codons are tag, tga and taa.
+# type list (example: tag,tga,taa)
+STOP_CODON:default
+
+Subgroup: Expert: 
+# ---------------
+# -E option
+# type str (absolute PATH is highly recommended)
+ENTROPY_PATH: default
+
+# -f option
+# If you use -f, then use the -g option.
+# type bool (True or False. default is False)
+FIXED: default
+
+# -i option
+# type str (absolute PATH is highly recommended)
+IGNORE_PATH: default 
+
+# -L option
+# type bool (True or False. default is False)
+LENGTH_OPT: default
+
+# -n option has been disable for GASBI and is used.
+
+# -o option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+MAX_OLAP: 50
+
+# -t option
+# type float (use a dot to spare entire part to decimal part)
+CUTOFF: 1.15
+
+# -w option
+# type bool (True or False. default is False)
+WITHOUT_STOPS: default
+
+# -z option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+TRANS_TABLE: default 
+
+Group: tRNA Finding Tool: 
+# #######################
+
+Tool: tRNAscan-SE: 
+# """"""""""""""""
+
+Subgroup: Basic:
+# --------------
+# -P / -B option
+# type bool (True or False. default is False)
+SEARCH_PROKARYOTIC: True
+
+# -A option
+# type bool (True or False. default is False)
+SEARCH_ARCHAEAL: default
+
+# -O option
+# type bool (True or False. default is False)
+SEARCH_ORGANELLAR: default
+
+# -D option
+# type bool (True or False. default is False)
+DISABLE_PSEUDOGENE_CHECKING: default
+
+# -L option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+LENGTH: default
+
+Subgroup: Expert:
+# ---------------
+# -G option
+# type bool (True or False. default is False)
+USE_GENERAL_MODEL: default
+
+# -C option
+# type bool (True or False. default is False)
+COVE_ANALYSIS: default
+
+# -H option
+# type bool (True or False. default is False)
+SHOW_BOTH_STRUCTURE: default
+
+# Output options have been disable for GASBI but they are used.
+
+# -o option has been disable for GASBI but it is used.
+# -f option has been disable for GASBI but is not used.
+# -a option has been disable for GASBI but is not used.
+# -m option has been disable for GASBI but is not used.
+# -d option has been disable for GASBI and is used.
+# -l option has been disable for GASBI but is not used.
+# -q option has been disable for GASBI and is not used.
+# -b option has been disable for GASBI and is used.
+
+# -N option
+# type bool (True or False. default is False)
+# CORRESPONDING_CODONS: default
+
+# -? and -p options are replaced by 'TAG' option from general options.
+
+# -y option has been disable for GASBI and is not used.
+
+# -X option
+# type float (use a dot to spare entire part to decimal part)
+COVE_CUTOFF_SCORE: default
+
+# -I option
+# type float (use a dot to spare entire part to decimal part)
+INTERMEDIATE_CUTOFF_SCORE: default
+
+# -B option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+NUMBER_NUCLEOTIDES_PADDING: default
+
+# -g option
+# type str
+ALTERNATE_GENETIC_CODE_PATH: default
+
+# -c option
+# type str
+ALTERNATE_COVARIANCE_MODEL: default
+
+# -Q option has been disable for GASBI but is used.
+
+# -n option
+# type str
+SEQUENCES_NAME: default
+
+# -s option
+# type str
+SEQUENCE_NAME_AND_CONTINUE: default
+
+# -T option
+# type bool (True or False. default is False)
+TRNASCAN_ONLY: default
+
+# -t option
+# type str
+SEARCH_MODE: default
+
+# -E option has been disable for GASBI and is not used.
+# -e option has been disable for GASBI and is not used.
+# -r option has been disable for GASBI and is not used.
+# -u option has been disable for GASBI and is not used.
+# -F option has been disable for GASBI and is not used.
+# -M option has been disable for GASBI and is not used.

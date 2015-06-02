@@ -1,0 +1,48 @@
+# ######################################################## # 
+# Genome Annotating Software for BioInformaticians - GASBI # 
+# ######################################################## #
+
+Group: Global: 
+# ###########
+# Path to the output folder where output files will be stored.
+# type str (absolute PATH is highly recommended)
+OUT_PATH: /home/
+
+# Path to the sequence of interest.
+# type str (absolute PATH is highly recommended)
+SEQUENCE_PATH: /home/
+
+# Name of your project. Output files will take this name as prefix.
+# type str (quotes are not necessary)
+TAG: test
+
+Group: CDS Finding Tool: 
+# ######################
+
+Tool: Glimmer: 
+# """"""""""""
+# You can refer to the official documentation for more information about settings: 
+# https: //ccb.jhu.edu/software/glimmer/glim302notes.pdf
+
+Subgroup: Basic: 
+# --------------
+# Path to the icm model you want to use to run Glimmer.
+# If ICM_MODEL_PATH is set to default, GASBI will run icm-build program
+# to generate the icm model then use it.
+# Anyway, the ICM_MODEL_PATH is calculated, so, setting it with particular
+# icm model do not improve performance of the software.
+# type str (absolute PATH is highly recommended)
+ICM_MODEL_PATH: default
+
+# -g option
+# If GENE_LEN is set to default, there is no minimum length for gene 
+# prediction.
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+GENE_LEN: 200
+
+Subgroup: Expert: 
+# ---------------
+
+# -o option
+# type int (no dot allowed: 1 is right; 1.0 isn't)
+MAX_OLAP: 50

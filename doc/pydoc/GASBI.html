@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module GASBI</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>GASBI</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/luc/Documents/PIB/workspace_pib/GASBI-PIB/src/GASBI.py">/home/luc/Documents/PIB/workspace_pib/GASBI-PIB/src/GASBI.py</a></font></td></tr></table>
+    <p><tt>Main&nbsp;created&nbsp;by&nbsp;Luc&nbsp;Giffon&nbsp;on&nbsp;26.3.15.<br>
+&nbsp;<br>
+This&nbsp;module&nbsp;contain&nbsp;the&nbsp;main&nbsp;class&nbsp;<a href="#Gasbi">Gasbi</a>&nbsp;and&nbsp;the&nbsp;main&nbsp;function&nbsp;which&nbsp;<br>
+organize&nbsp;all&nbsp;steps&nbsp;of&nbsp;the&nbsp;process.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="GASBI.html#Gasbi">Gasbi</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Gasbi">class <strong>Gasbi</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Organize&nbsp;the&nbsp;processes&nbsp;by&nbsp;calling&nbsp;sub-managers&nbsp;which&nbsp;will&nbsp;do&nbsp;specific&nbsp;tasks.<br>
+&nbsp;<br>
+Parse&nbsp;configuration&nbsp;file&nbsp;with&nbsp;<a href="#Gasbi-parse_options">parse_options</a>().<br>
+Launch&nbsp;tools&nbsp;with&nbsp;<a href="#Gasbi-launch_tools">launch_tools</a>().<br>
+Parse&nbsp;output&nbsp;files&nbsp;of&nbsp;each&nbsp;tools&nbsp;with&nbsp;<a href="#Gasbi-parse_results">parse_results</a>().<br>
+Analyze&nbsp;results&nbsp;of&nbsp;each&nbsp;group&nbsp;of&nbsp;FindingTools&nbsp;with&nbsp;<a href="#Gasbi-perform_analysis">perform_analysis</a>().<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Gasbi-__init__"><strong>__init__</strong></a>(self, config_file)</dt><dd><tt>Initialize&nbsp;sub-managers&nbsp;and&nbsp;configuration&nbsp;file&nbsp;name.<br>
+&nbsp;<br>
+Private&nbsp;attributes:<br>
+config_file&nbsp;is&nbsp;the&nbsp;path&nbsp;(string)&nbsp;to&nbsp;find&nbsp;the&nbsp;configuration&nbsp;file<br>
+from&nbsp;current&nbsp;directory.<br>
+tool_objects&nbsp;is&nbsp;a&nbsp;dictionary&nbsp;which&nbsp;will&nbsp;contain&nbsp;group&nbsp;of&nbsp;finding<br>
+tools&nbsp;as&nbsp;keys&nbsp;and&nbsp;tool&nbsp;objects&nbsp;lists&nbsp;as&nbsp;items.&nbsp;It&nbsp;is&nbsp;filled&nbsp;with<br>
+<a href="#Gasbi-launch_tools">launch_tools</a>().<br>
+option_manager&nbsp;is&nbsp;an&nbsp;OptionManager&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;which&nbsp;will&nbsp;manage&nbsp;the<br>
+parsing&nbsp;of&nbsp;configuration&nbsp;file&nbsp;and&nbsp;hold&nbsp;options.&nbsp;It&nbsp;is&nbsp;filled&nbsp;with<br>
+<a href="#Gasbi-parse_options">parse_options</a>().<br>
+results_manager&nbsp;is&nbsp;a&nbsp;dictionary&nbsp;which&nbsp;will&nbsp;contain&nbsp;group&nbsp;of&nbsp;finding<br>
+tools&nbsp;as&nbsp;keys&nbsp;and&nbsp;ResultManager&nbsp;objects&nbsp;as&nbsp;items.&nbsp;They&nbsp;will<br>
+manage&nbsp;the&nbsp;parsing&nbsp;of&nbsp;output&nbsp;file&nbsp;for&nbsp;each&nbsp;tool.&nbsp;It&nbsp;is&nbsp;filled<br>
+with&nbsp;<a href="#Gasbi-parse_results">parse_results</a>().</tt></dd></dl>
+
+<dl><dt><a name="Gasbi-launch_tools"><strong>launch_tools</strong></a>(self)</dt><dd><tt>Launch&nbsp;each&nbsp;tool&nbsp;and&nbsp;filling&nbsp;the&nbsp;tool&nbsp;objects&nbsp;dictionary.</tt></dd></dl>
+
+<dl><dt><a name="Gasbi-parse_options"><strong>parse_options</strong></a>(self)</dt><dd><tt>Make&nbsp;the&nbsp;option_manager&nbsp;load&nbsp;and&nbsp;check&nbsp;options&nbsp;from&nbsp;configuration&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="Gasbi-parse_results"><strong>parse_results</strong></a>(self)</dt><dd><tt>Parse&nbsp;output&nbsp;files&nbsp;thanks&nbsp;to&nbsp;the&nbsp;tool&nbsp;objects&nbsp;dictionary.</tt></dd></dl>
+
+<dl><dt><a name="Gasbi-perform_analysis"><strong>perform_analysis</strong></a>(self)</dt><dd><tt>Build&nbsp;lists&nbsp;containing&nbsp;all&nbsp;cds&nbsp;or&nbsp;trna.</tt></dd></dl>
+
+<dl><dt><a name="Gasbi-write_outfile"><strong>write_outfile</strong></a>(self)</dt><dd><tt>write&nbsp;the&nbsp;outfiles&nbsp;in&nbsp;output+tag&nbsp;directory</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

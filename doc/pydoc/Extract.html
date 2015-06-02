@@ -1,0 +1,135 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Extract</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Extract</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/luc/Documents/PIB/workspace_pib/GASBI-PIB/src/tool/Extract.py">/home/luc/Documents/PIB/workspace_pib/GASBI-PIB/src/tool/Extract.py</a></font></td></tr></table>
+    <p><tt>Module&nbsp;Containing&nbsp;<a href="#Extract">Extract</a>&nbsp;class&nbsp;which&nbsp;check&nbsp;options,&nbsp;launch&nbsp;and&nbsp;parse&nbsp;results&nbsp;of&nbsp;<a href="#Extract">Extract</a>&nbsp;software.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="tool.PreliminaryTool.html#PreliminaryTool">tool.PreliminaryTool.PreliminaryTool</a>(<a href="tool.Tool.html#Tool">tool.Tool.Tool</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Extract.html#Extract">Extract</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Extract">class <strong>Extract</strong></a>(<a href="tool.PreliminaryTool.html#PreliminaryTool">tool.PreliminaryTool.PreliminaryTool</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Check&nbsp;options&nbsp;and&nbsp;launch&nbsp;<a href="#Extract">Extract</a>&nbsp;software.<br>
+&nbsp;<br>
+Launch&nbsp;<a href="#Extract">Extract</a>&nbsp;with&nbsp;<a href="#Extract-start">start</a>().<br>
+<a href="#Extract">Extract</a>&nbsp;inherit&nbsp;from&nbsp;<a href="tool.PreliminaryTool.html#PreliminaryTool">PreliminaryTool</a>.&nbsp;<br>
+Static&nbsp;variables&nbsp;for&nbsp;<a href="#Extract">Extract</a>&nbsp;class&nbsp;are:&nbsp;OPTIONS_PROPERTIES,&nbsp;NAME<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Extract.html#Extract">Extract</a></dd>
+<dd><a href="tool.PreliminaryTool.html#PreliminaryTool">tool.PreliminaryTool.PreliminaryTool</a></dd>
+<dd><a href="tool.Tool.html#Tool">tool.Tool.Tool</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Extract-__init__"><strong>__init__</strong></a>(self, general_options, extract_options)</dt><dd><tt>Initialize&nbsp;the&nbsp;Extract_options.<br>
+&nbsp;<br>
+Private&nbsp;Attributes:<br>
+Extract_options&nbsp;is&nbsp;an&nbsp;OptionList&nbsp;which&nbsp;contain&nbsp;only&nbsp;<a href="#Extract">Extract</a>'s&nbsp;<br>
+options.<br>
+parent_output_path&nbsp;and&nbsp;output_path&nbsp;will&nbsp;be&nbsp;set&nbsp;later&nbsp;because&nbsp;the<br>
+get_output_path&nbsp;method&nbsp;from&nbsp;Tool&nbsp;object&nbsp;is&nbsp;not&nbsp;right&nbsp;for&nbsp;<br>
+preliminary&nbsp;tools.</tt></dd></dl>
+
+<dl><dt><a name="Extract-set_output_path"><strong>set_output_path</strong></a>(self, parent_output_path)</dt><dd><tt>Set&nbsp;<a href="#Extract">Extract</a>&nbsp;output_path.<br>
+&nbsp;<br>
+The&nbsp;<a href="#Extract">Extract</a>&nbsp;output_path&nbsp;is&nbsp;set&nbsp;from&nbsp;Glimmer's&nbsp;Output&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Extract-start"><strong>start</strong></a>(self)</dt><dd><tt>Launches&nbsp;<a href="#Extract">Extract</a>&nbsp;software&nbsp;on&nbsp;command&nbsp;line.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>NAME</strong> = 'Extract'</dl>
+
+<dl><dt><strong>OPTIONS_PROPERTIES</strong> = {'DIR': {'key': 'd', 'typee': 'bool'}, 'INPUT_FILE_PATH': {'key': None, 'typee': 'str'}, 'MINLEN': {'key': '-l', 'typee': 'int'}, 'NO_START': {'key': '-s', 'typee': 'bool'}, 'NO_STOP': {'key': '-t', 'typee': 'bool'}, 'NO_WRAP': {'key': '-w', 'typee': 'bool'}}</dl>
+
+<hr>
+Methods inherited from <a href="tool.Tool.html#Tool">tool.Tool.Tool</a>:<br>
+<dl><dt><a name="Extract-check_output"><strong>check_output</strong></a>(self)</dt><dd><tt>Check&nbsp;the&nbsp;integrity&nbsp;of&nbsp;tool's&nbsp;output&nbsp;file.<br>
+&nbsp;<br>
+Warning&nbsp;Exception&nbsp;are&nbsp;raised&nbsp;if&nbsp;an&nbsp;output&nbsp;file&nbsp;is&nbsp;wrong.<br>
+The&nbsp;method&nbsp;is&nbsp;generic&nbsp;for&nbsp;all&nbsp;tools.</tt></dd></dl>
+
+<dl><dt><a name="Extract-get_group"><strong>get_group</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;group&nbsp;of&nbsp;the&nbsp;tool&nbsp;object.&nbsp;(CDSFidning,&nbsp;tRANFinding..)<br>
+&nbsp;<br>
+Abstract&nbsp;method.</tt></dd></dl>
+
+<dl><dt><a name="Extract-get_output_path"><strong>get_output_path</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;ouput_path&nbsp;concatenated&nbsp;with&nbsp;tool's&nbsp;folder&nbsp;name&nbsp;as&nbsp;a&nbsp;string.<br>
+&nbsp;<br>
+The&nbsp;method&nbsp;is&nbsp;generic&nbsp;for&nbsp;all&nbsp;tools.</tt></dd></dl>
+
+<dl><dt><a name="Extract-launch_preliminary_tools"><strong>launch_preliminary_tools</strong></a>(self, tools_to_launch, tool_objects)</dt><dd><tt>Call&nbsp;preliminary&nbsp;tool's&nbsp;start&nbsp;functions.<br>
+&nbsp;<br>
+Some&nbsp;main&nbsp;tools&nbsp;need&nbsp;to&nbsp;launch&nbsp;preliminary&nbsp;tools&nbsp;before&nbsp;their&nbsp;own<br>
+run.&nbsp;Example:&nbsp;Glimmer.<br>
+tools_to_launch&nbsp;is&nbsp;a&nbsp;constant&nbsp;list&nbsp;in&nbsp;the&nbsp;tool&nbsp;object&nbsp;which&nbsp;contain<br>
+the&nbsp;name&nbsp;of&nbsp;the&nbsp;preliminary&nbsp;tools.<br>
+tool_objects&nbsp;is&nbsp;the&nbsp;dictionary&nbsp;of&nbsp;preliminary&nbsp;tools.<br>
+The&nbsp;method&nbsp;is&nbsp;generic&nbsp;for&nbsp;all&nbsp;tools.</tt></dd></dl>
+
+<dl><dt><a name="Extract-load_command_line_options"><strong>load_command_line_options</strong></a>(self, tool_options)</dt><dd><tt>Return&nbsp;the&nbsp;command&nbsp;line&nbsp;with&nbsp;options&nbsp;loaded.<br>
+&nbsp;<br>
+tool_options&nbsp;is&nbsp;an&nbsp;OptionList&nbsp;Object.<br>
+Options&nbsp;are&nbsp;loaded&nbsp;from&nbsp;tool_options&nbsp;OptionList.<br>
+The&nbsp;method&nbsp;is&nbsp;generic&nbsp;for&nbsp;all&nbsp;tools.</tt></dd></dl>
+
+<dl><dt><a name="Extract-parse_output"><strong>parse_output</strong></a>(self)</dt><dd><tt>parse_ouput&nbsp;load&nbsp;information&nbsp;from&nbsp;tool's&nbsp;output&nbsp;file.<br>
+&nbsp;<br>
+Abstract&nbsp;Method.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="tool.Tool.html#Tool">tool.Tool.Tool</a>:<br>
+<dl><dt><a name="Extract-check_options"><strong>check_options</strong></a>(options, available_options<font color="#909090">=None</font>)</dt><dd><tt>Call&nbsp;Checker&nbsp;class's&nbsp;methods&nbsp;to&nbsp;check&nbsp;the&nbsp;quality&nbsp;of&nbsp;the&nbsp;options.<br>
+&nbsp;<br>
+Checking:&nbsp;Expected&nbsp;Options<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Option's&nbsp;type<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic&nbsp;Options&nbsp;specified&nbsp;#to&nbsp;do<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Path&nbsp;Options&nbsp;Exists<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Error&nbsp;Exceptions&nbsp;are&nbsp;raised&nbsp;if&nbsp;an&nbsp;option&nbsp;is&nbsp;wrong.<br>
+The&nbsp;method&nbsp;is&nbsp;generic&nbsp;for&nbsp;all&nbsp;tools.<br>
+Static&nbsp;Method.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="tool.Tool.html#Tool">tool.Tool.Tool</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

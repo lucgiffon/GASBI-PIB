@@ -1,0 +1,80 @@
+2015-04-18 17:56:59,265 :: ERROR :: Error: OptionMissing: Path option_group1/option_tool1/option_subgroup1option_name1 does not exist yet.
+2015-04-18 18:08:08,000 :: ERROR :: Error: OptionMissing: Path option_group1/option_tool1/option_subgroup1option_name1 does not exist yet.
+2015-04-18 18:09:17,491 :: ERROR :: Error: OptionMissing: Path option_group1/option_tool1/option_subgroup1option_name1 does not exist yet.
+2015-04-18 18:10:31,671 :: ERROR :: Error: OptionMissing: Path option_group1/option_tool/option_subgroup/option_name1 does not exist yet.
+2015-04-18 18:11:54,022 :: ERROR :: Error: OptionMissing: Path option_group/option_tool/option_subgroup/option_name1 does not exist yet.
+2015-04-18 18:12:49,640 :: ERROR :: Error: OptionMissing: Path option_group/option_tool/option_subgroup/option_name1 does not exist yet.
+2015-04-18 18:13:34,207 :: ERROR :: Error: OptionMissing: Path option_group/option_tool/option_subgroup/option_name1 does not exist yet.
+2015-04-18 18:14:00,079 :: ERROR :: Error: OptionMissing: Path option_name1 does not exist yet.
+2015-04-18 18:14:13,009 :: ERROR :: Error: OptionMissing: Path option_group/option_tool/option_subgroup/option_name1 does not exist yet.
+2015-04-18 18:23:24,319 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 18:24:08,733 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 18:24:44,385 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 18:25:32,281 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 18:38:18,463 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 18:39:18,906 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:10:27,148 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:13:23,077 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:13:32,170 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:14:49,263 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:14:58,941 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:14:58,941 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:19:49,215 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:19:49,215 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:26:48,134 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:26:48,134 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:27:13,261 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:27:13,262 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:29:14,462 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:29:14,462 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:29:22,061 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:29:22,062 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:30:15,286 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:30:15,287 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:34:07,194 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:34:07,194 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:34:20,808 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:34:20,808 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:35:03,502 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:35:03,502 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-18 19:36:49,443 :: ERROR :: Error: OptionMissing: Path option_subgroup3 does not exist yet.
+2015-04-18 19:36:49,443 :: ERROR :: Error: OptionMissing: Path option_name3 does not exist yet.
+2015-04-19 09:00:34,766 :: ERROR :: The specified config file does not exists: configuration_file_test
+2015-04-19 09:01:19,585 :: ERROR :: Error: OptionMissing: Path SEQUENCE_PATH does not exist yet.
+2015-04-19 09:01:51,540 :: ERROR :: Error: OptionMissing: Path SEQUENCE_PATH does not exist yet.
+2015-04-19 09:02:09,729 :: ERROR :: Error: OptionMissing: Path SEQUENCE_PATH does not exist yet.
+2015-04-19 09:03:44,031 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:05:21,852 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:05:21,853 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:05:58,372 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:06:35,371 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:06:35,372 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:07:51,618 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:07:51,618 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:20:15,113 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:20:15,114 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:22:30,518 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:22:30,519 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:22:56,354 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:22:56,354 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:23:20,481 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:23:20,482 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:24:34,609 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:24:34,609 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:25:35,204 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:25:35,205 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:37:25,561 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:37:25,561 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
+2015-04-19 09:38:42,253 :: ERROR :: The specified config file does not exists: not_existant_file
+2015-04-19 09:38:42,253 :: ERROR :: The line 18 is not formated correctly: corrupted_line
+
